@@ -1,0 +1,122 @@
+
+/* css boilerplate  */
+@font-face {
+    font-family: intertight;
+    src: url(font/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: intertight;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  /* css boilerplate ends */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(49, 49, 49) 0%, rgb(31, 31, 31) 100%);
+  }
+  .container {
+    height: 100%;
+    width: 65vh;
+    padding: 110px 0px;
+  }
+  .content {
+    padding: 35px 20px;
+    height: 100%;
+    width: 100%;
+  }
+  #heading {
+    text-align: center;
+    color: white;
+    cursor: default;
+    font-size: 1em;
+  }
+  #heading h3 {
+    margin-top: 6px;
+    font-size: 1.3em;
+  }
+  .inputContainer {
+    padding: 25px 0px;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 30px;
+  }
+  .inputContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 20px;
+    height: 100%;
+  }
+  .inputHeading {
+    text-align: center;
+    color: rgb(244, 244, 244);
+    margin: 10px auto;
+    cursor: default;
+    font-weight:lighter
+  }
+  .checkboxField {
+    color: rgb(231, 231, 231);
+    /* font-size: 0.85em; */
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+  
+  .continueBtn button{
+    width: 100%;
+    color: black;
+    font-size: 0.88em;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px 0px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .continueBtn button:hover{
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid greenyellow;
+  }
+  .empty{
+    flex-grow: 1;
+  }
+  #description{
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    cursor: default;
+  }
+  #description a{
+    color: greenyellow;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* @media (max-width: 480px) {
+    
+  } */
+   @media (max-width: 388px){
+    .checkboxField input lable{
+      font-size: 0.7em;
+    }
+   }
